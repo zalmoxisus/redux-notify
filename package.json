@@ -1,7 +1,7 @@
 {
   "name": "redux-notify",
-  "version": "0.1.0",
-  "description": "Notify when specified redux actions are dispached.",
+  "version": "0.1.1",
+  "description": "Notify when specified redux actions are dispatched.",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib dist coverage",
