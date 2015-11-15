@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ReactNotificationSystem from 'react-notification-system';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 class Notifications extends Component {
   static propTypes = {
@@ -15,4 +17,10 @@ class Notifications extends Component {
   }
 }
 
-export default Notifications;
+function mapStateToProps(state) {
+  return {
+    notification: state.notification
+  };
+}
+
+export default connect(mapStateToProps)(Notifications);
