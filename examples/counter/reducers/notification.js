@@ -1,9 +1,8 @@
 import { NOTIFY_TOP } from '../actions/notification';
 
-export default function notification(state = {}, action) {
+export default function notification(state = { message: '' }, action) {
   switch (action.type) {
     case NOTIFY_TOP:
-      console.log('state',state);
       return {
         ...state,
         message: 'Changed counter to ' + action.counter,
