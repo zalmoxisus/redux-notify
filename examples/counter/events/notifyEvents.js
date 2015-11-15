@@ -1,9 +1,10 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER, increment } from '../actions/counter';
+import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../actions/counter';
+import { notifyTop } from '../actions/notification';
 
 const events = [
   {
-    catch: [DECREMENT_COUNTER],
-    dispatch: increment
+    catch: [INCREMENT_COUNTER, DECREMENT_COUNTER],
+    dispatch: notifyTop
   }
 ];
 
