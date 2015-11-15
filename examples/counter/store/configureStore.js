@@ -1,9 +1,12 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
+import notify from 'redux-notify';
 import invariant from 'redux-immutable-state-invariant';
 import reducer from '../reducers';
+import notifyEvents from '../events/notifyEvents';
 
 const middleware = [
+  notify(notifyEvents),
   thunk,
   invariant()
 ];
