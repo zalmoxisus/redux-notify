@@ -23,7 +23,7 @@
     "react-redux": "^4.0.0",
     "react-toolbox": "^0.11.5",
     "redux": "^3.0.0",
-    "redux-notify": "^0.1.1",
+    "redux-notify": "file:../../",
     "redux-thunk": "^0.1.0"
   },
   "devDependencies": {
@@ -38,7 +38,7 @@
     "jsdom": "^5.6.1",
     "mocha": "^2.2.5",
     "node-libs-browser": "^0.5.2",
-    "node-sass": "^3.4.2",
+    "node-sass": "~3.4.2",
     "normalize.css": "^3.0.3",
     "postcss": "^5.0.12",
     "postcss-loader": "^0.8.0",

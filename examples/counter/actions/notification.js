@@ -7,3 +7,14 @@ export function notifyTop(caller) {
     dispatch({ type: NOTIFY_TOP, caller: caller });
   };
 }
+
+export function delayedNotifyTop(caller, delay = 1000) {
+  return (dispatch, getState) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        dispatch({ type: NOTIFY_TOP, caller: caller });
+        resolve();
+      }, delay)
+    });
+  };
+}
